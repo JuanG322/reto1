@@ -25,13 +25,12 @@ public class Reto1 {
         
         while (numeroPacientes>0){
             
-            numeroPacientes --;
+            numeroPacientes--;
             System.out.println("Ingrese los datos del paciente: ");
-            String datosPaciente = scanner.nextLine();
-            System.out.println("Datos: "+datosPaciente);
-            //String[]datos = datosPaciente.toLowerCase().split("-");
-            
-            //System.out.println("Longitud"+datos.length);
+            String datosPaciente = scanner.next();//nesecito una forma que lo lea todo
+            System.out.println("Datos: "+ datosPaciente);
+            String[]datos = datosPaciente.toLowerCase().split("-");
+            System.out.println("si "+datos[5]);
             
         }
     }

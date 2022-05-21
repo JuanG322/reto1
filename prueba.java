@@ -17,32 +17,19 @@ import java.util.Scanner;
 public class prueba {
         public static void main(String[] args) {
             
+            int var1=0,longitud = 0;
             
-            int numeroPacientes;
-            List<String> listDatos = new ArrayList<String>();
-            Scanner scanner = new Scanner(System.in);
-            Map<String, Integer> map = new HashMap<String, Integer>();
-            
-            map.put("cancer", 0);
-            map.put("cardiovasculares", 0);
-            map.put("respiratorias", 0);
-            map.put("cerebrovasculares",0);
-            map.put("hipertensión",0);
-            map.put("diabetes",0);        
-            
-            System.out.println("Ingrese el numero de pacientes: ");
-            numeroPacientes = scanner.nextInt();
-            
-            while(numeroPacientes > 0){
-                
-                numeroPacientes--;
-                System.out.println("Ingrese los datos del paciente: ");
-                String datosUsuario  = scanner.next();
-                System.out.println(datosUsuario);
-                listDatos.add(datosUsuario);
-                System.out.println(listDatos);
+            String datos = "Julian Andrade-723456-45-Barranquilla-Sura-cardiovasculares";
+            String[] palabras = datos.toLowerCase().split("-");
 
+            longitud = palabras.length;
+            System.out.println(longitud);
+
+            
+            for(int i = 0;i< longitud; i++ ){
+                //System.out.println("v["+i+"] = " + palabras[i]); le todo el vectot
+                System.out.println(palabras[5]);//le solo un elemento del vector
                 
             }
-        }
-}
+            
+        }}
