@@ -11,16 +11,18 @@ import java.util.Scanner;
 public class prueba2 {
     public static void main(String[] args) {
         
-        int longitud, numeroPacientes;
+        int longitud, numeroPacinetesInt;
         Scanner scanner = new Scanner(System.in);
         
         System.out.println("Ingrese el numero de pacientes: ");
-        numeroPacientes = scanner.nextInt();
-        numeroPacientes++;
+        String numeroPacientes = scanner.nextLine();
+        numeroPacinetesInt = Integer.parseInt(numeroPacientes);
+                
+        //numeroPacinetesInt++;//para que funcione el ciclo
         
-        while(numeroPacientes >0){
+        while(numeroPacinetesInt >0){
             
-            numeroPacientes--;
+            numeroPacinetesInt--;
             System.out.println("Ingrese algo: ");
             String datos = scanner.nextLine();
             
