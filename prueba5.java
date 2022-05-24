@@ -11,13 +11,28 @@ import java.util.Arrays;
 public class prueba5 {
 
     public static void main(String[] args) {
-        Integer[] array1 = {2, 4, 6, 8, 10};
         
-        int var2 = 6;
+        int a = 0,b = 10,c = 145,d = 0,e = 1,f = 0; 
+        
+        int[] numeros = new int [] {a, b, c, d, e, f};
+       // String arrayS= Integer.toString(array1);
+        int indiceMayor = 0, indiceMenor = 0;
+        
+        for(int i = 1; i < numeros.length;i++){
+            if(numeros[i] > numeros[indiceMayor]){
+                indiceMayor = i;
+            }
+        }
+        for(int i = 1; i < numeros.length;i++){
+             if(numeros[i] < numeros[indiceMenor]){
+                indiceMenor = i;
+            }
+        }
+        
+        //int mayor = numeros[indiceMayor];
 
-        int getIndex = Arrays.asList(array1).indexOf(var2);
-
-        System.out.println("8 is located at "+getIndex+" index");
+        System.out.println("mayor is located at "+indiceMayor);
+        System.out.println("Menor = "+indiceMenor);
     }
 }
 

@@ -55,7 +55,7 @@ public class prueba4 {
             else if(enfermedades.equalsIgnoreCase("diabetes")){
                 diab++;
             }
-
+            cancer++; card++; respi++; cereb++; hiper++; diab++;
             System.out.println("cancer: "+cancer+" cardio: "+card+" respi: "+respi+" cerebrov: "+cereb+" hiper: "+hiper+" diab: "+diab);
         }    
         int[] numeroEnfermedades = {cancer, card, respi, cereb, hiper, diab};
